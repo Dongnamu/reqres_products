@@ -1,7 +1,7 @@
 pipeline { agent any
 
 environment {
-    REGISTRY = 'user##.azurecr.io'
+    REGISTRY = 'user10.azurecr.io'
     IMAGE_NAME = 'product'
     AKS_CLUSTER = 'user10-aks'
     RESOURCE_GROUP = 'user10-rsrcgrp'
