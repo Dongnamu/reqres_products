@@ -74,8 +74,8 @@ stages {
             script {
                 withCredentials([usernamePassword(credentialsId: GITHUB_CREDENTIALS_ID, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                    sh """
-                            git config --global user.email "danwoo0911@example.com"
-                            git config --global user.name "Dongnamu"
+                            git config --global user.email "your-email@example.com"
+                            git config --global user.name "Jenkins CI"
                             git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@${GITHUB_REPO} repo
                             cp kubernetes/deploy.yaml repo/kubernetes/deploy.yaml
                             cd repo
